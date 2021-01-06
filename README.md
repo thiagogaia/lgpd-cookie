@@ -10,13 +10,10 @@ Adicione o script à sua pagina e em seguida chame o componente da seguinte form
   
 A ação do botão 'Sim, eu aceito' cria um cookie chamado *cookiePolicy*. O qual deve fazer parte da sua lógica para não aparecer mais o aviso.
 
-~~
-Ex.:
+
+~~Ex.:
 ```php
-if(!isset($_COOKIE['cookiePolicy']) || $_COOKIE['cookiePolicy'] === true ) {
-  //Mostra o componente lgpdCookie
-  echo "<lgpd-cookie text='Seu Texto aqui. Obs: Aceita HTML para referenciar a politica de privacidade' />";
-}
+Codigo antigo foi atualizada verificação por JS
 ```
-~~
+
 Update: O JS já faz a verificação do cookie **NÃO necessitando mais NADA além de chamar o script e o componente.**
