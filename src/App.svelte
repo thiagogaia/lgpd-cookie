@@ -1,3 +1,4 @@
+<svelte:options immutable={true} tag='lgpd-cookie'/>
 <script>
   import {fade} from 'svelte/transition'
   import { slide } from 'svelte/transition'
