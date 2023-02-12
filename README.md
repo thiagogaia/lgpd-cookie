@@ -1,4 +1,4 @@
-<h1 align="center"> lgpd-cookie </h1>
+<h1 align="center"> Lgpd-cookie </h1>
 
 <p align="center">
   Criador de aviso para atender à LGPD
