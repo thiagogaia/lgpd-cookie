@@ -97,16 +97,18 @@
   }
 
   #cookiePolicy {
+    overflow-y: auto;
+    max-height: 350px;
     position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 200;
+    z-index: 99999;
     background-color: #0e0d1dd6;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   #cookiePolicy .container2 {
