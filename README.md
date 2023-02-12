@@ -20,7 +20,7 @@
   <img alt="projeto lgpd-cookie" src=".github/preview.jpg" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🐡 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
