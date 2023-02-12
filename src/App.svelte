@@ -37,15 +37,18 @@
       
       <p>{@html text}</p>
 
-      <button on:click={accept} class="footer_output_btn btn btn-success">
-        Permitir Cookies
-      </button>
-      <button on:click={accept} class="footer_output_btn btn btn-success">
-        Recusar Cookies
-      </button>
-      <button on:click={settings} class="footer_output_btn btn btn-success">
-        Preferência de Cookies
-      </button>
+      <div class="buttonsActions">
+        <button on:click={accept} class="footer_output_btn btn btn-success">
+          Permitir Cookies
+        </button>
+        <button on:click={accept} class="footer_output_btn btn btn-success">
+          Recusar Cookies
+        </button>
+        <button on:click={settings} class="footer_output_btn btn btn-success">
+          Preferência de Cookies
+        </button>
+      </div>
+      
 
       {#if showSettings}
         <div transition:slide class="prefCookie">
@@ -96,9 +99,16 @@
     font-size: 1.2em;
   }
 
+  #cookiePolicy .buttonsActions {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
   #cookiePolicy {
     overflow-y: auto;
-    max-height: 350px;
+    max-height: 420px;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -106,9 +116,9 @@
     z-index: 99999;
     background-color: #0e0d1dd6;
     width: 100%;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    /* align-items: baseline; */
   }
 
   #cookiePolicy .container2 {
@@ -168,5 +178,11 @@
     will-change: opacity, transform;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    #cookiePolicy .container2 {
+      padding: 15px 10px;
+    }
   }
 </style>
