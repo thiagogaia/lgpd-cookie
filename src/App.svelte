@@ -16,11 +16,11 @@
     if (partes.length == 2) return partes.pop().split(";").shift();
   }
 
-  let cookiePolicy = getCookie('cookiePolicy') || false
+  let cookiePolicy = getCookie('cookiePolicy2') || false
 
   function accept() {
     cookiePolicy = true
-    setCookie('cookiePolicy', cookiePolicy, 2)
+    setCookie('cookiePolicy2', cookiePolicy, 2)
   }
 
   let showSettings = false
