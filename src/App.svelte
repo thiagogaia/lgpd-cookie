@@ -20,7 +20,7 @@
 
   function accept() {
     cookiePolicy = true
-    setCookie('cookiePolicy', cookiePolicy, 365)
+    setCookie('cookiePolicy', cookiePolicy, 2)
   }
 
   let showSettings = false
@@ -41,7 +41,7 @@
         <button on:click={accept} class="footer_output_btn btn btn-success">
           Permitir Cookies
         </button>
-        <button on:click={accept} class="footer_output_btn btn btn-success">
+        <button on:click={() => cookiePolicy = true } class="footer_output_btn btn btn-success">
           Recusar Cookies
         </button>
         <button on:click={settings} class="footer_output_btn btn btn-success">
